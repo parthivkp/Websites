@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralax </title>
+</head>
+<style>
+   
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+section{
+    background-color: #333;
+    color: white;
+}
+
+#wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+   
+    
+}
+.background{
+    transform: translateZ(-40px) scale(5) ;
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+.foreground,.background{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+h1{
+    position: relative;
+    letter-spacing: 4px;
+    text-shadow: 0 0  10px rgba(0, 0,0, 0.3);
+    top: -10rem;
+    font-size: 4rem;
+}
+.text{
+    padding: 0 18rem;
+    margin: 5rem 0;
+    font-size: large;
+}
+.biking{
+    background-image: url("sport-1.jpg");
+}
+.para{
+    background-image: url("sport-2.jpg");
+}
+.surfing{
+    background-image: url("sport-3.jpg");
+}
+.bgimg{
+    height: 500px;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+}
+.secheading{
+    text-align: center;
+    font-size: 4rem;
+}
+.heading{
+    font-size: 5rem;
+   text-align: center;
+}
+</style>
+<body>
+    <div id="wrapper">
+    <div class="container">
+    <img src="background.png" class="background" />
+    <img src="foreground.png" class="foreground"/>
+    <h1>
+        ADVENTURE
+    </h1>
+    
+   
+</div>
+<section>
+    <h2 class="secheading">Adventure Time</h2>
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui necessitatibus commodi alias? Veritatis, eligendi nisi. Amet exercitationem, recusandae dolore corrupti laborum aperiam repellendus natus voluptatem quam atque aliquam beatae. Odit deserunt nisi optio eveniet? Aliquam possimus molestiae, ullam illum accusamus autem accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam eaque autem labore provident dolorum, velit omnis mollitia eos adipisci!
+<br>
+        <br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque hic tempore rem eveniet sed repudiandae molestiae magnam aut quod consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis quod similique fugiat fugit ea expedita deleniti doloribus, delectus perferendis, tempore amet maiores libero sapiente voluptatem reprehenderit? Illum alias commodi cupiditate corporis mollitia ab quaerat, ipsum est excepturi vitae a sunt optio.
+    </p>
+    <h2 class="biking bgimg heading">Biking</h2>
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui necessitatibus commodi alias? Veritatis, eligendi nisi. Amet exercitationem, recusandae dolore corrupti laborum aperiam repellendus natus voluptatem quam atque aliquam beatae. Odit deserunt nisi optio eveniet? Aliquam possimus molestiae, ullam illum accusamus autem accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam eaque autem labore provident dolorum, velit omnis mollitia eos adipisci!
+        <br>
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque hic tempore rem eveniet sed repudiandae molestiae magnam aut quod consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis quod similique fugiat fugit ea expedita deleniti doloribus, delectus perferendis, tempore amet maiores libero sapiente voluptatem reprehenderit? Illum alias commodi cupiditate corporis mollitia ab quaerat, ipsum est excepturi vitae a sunt optio.
+            </p>
+            <h2 class="para bgimg heading">Para</h2>
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui necessitatibus commodi alias? Veritatis, eligendi nisi. Amet exercitationem, recusandae dolore corrupti laborum aperiam repellendus natus voluptatem quam atque aliquam beatae. Odit deserunt nisi optio eveniet? Aliquam possimus molestiae, ullam illum accusamus autem accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam eaque autem labore provident dolorum, velit omnis mollitia eos adipisci!
+        <br>
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque hic tempore rem eveniet sed repudiandae molestiae magnam aut quod consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis quod similique fugiat fugit ea expedita deleniti doloribus, delectus perferendis, tempore amet maiores libero sapiente voluptatem reprehenderit? Illum alias commodi cupiditate corporis mollitia ab quaerat, ipsum est excepturi vitae a sunt optio.
+            </p>
+            <h2 class="surfing bgimg heading">Surfing</h2>
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui necessitatibus commodi alias? Veritatis, eligendi nisi. Amet exercitationem, recusandae dolore corrupti laborum aperiam repellendus natus voluptatem quam atque aliquam beatae. Odit deserunt nisi optio eveniet? Aliquam possimus molestiae, ullam illum accusamus autem accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam eaque autem labore provident dolorum, velit omnis mollitia eos adipisci!
+        <br>
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque hic tempore rem eveniet sed repudiandae molestiae magnam aut quod consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis quod similique fugiat fugit ea expedita deleniti doloribus, delectus perferendis, tempore amet maiores libero sapiente voluptatem reprehenderit? Illum alias commodi cupiditate corporis mollitia ab quaerat, ipsum est excepturi vitae a sunt optio.
+            </p>
+</section>
+</div>
+
+</body>
+</html>
